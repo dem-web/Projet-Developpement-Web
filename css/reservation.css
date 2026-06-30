@@ -1,0 +1,230 @@
+body {
+    background-color: rgb(70, 119, 145);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: bold;
+    user-select: none;
+    /* pour éviter les surbrillages bleues */
+    margin: 0;
+    padding: 0;
+}
+
+.titre h2 {
+    font-size: 32px;
+    text-align: center;
+    margin: 40px 0 30px 0;
+}
+
+/* STRUCTURE */
+.reservation-contenu {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    /* étire les blocs enfants pour qu’ils aient la même hauteur */
+    gap: 30px;
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+    margin-bottom: 50px;
+
+}
+
+.ticket {
+    flex: 1;
+    max-width: 800px;
+    padding: 30px;
+    background-color: rgb(9, 26, 36);
+    border-radius: 20px;
+}
+
+.colonne-droite {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.panier {
+    padding: 25px;
+    background-color: rgb(9, 26, 36);
+    border-radius: 20px;
+}
+
+.ticket h2 {
+    background-color: rgba(161, 210, 213, 0.824);
+    padding: 15px 20px;
+    margin: -30px -30px 25px -30px;
+    border-radius: 20px 20px 0 0;
+}
+
+.panier-tete {
+    background-color: rgba(161, 210, 213, 0.824);
+    padding: 15px 20px;
+    margin: -25px -25px 10px -25px;
+    border-radius: 20px 20px 0 0;
+}
+
+.panier h2 {
+    margin: 0;
+    padding: 0;
+    background: none;
+    /* enlève le fond hérité ou prévu pour ce titre */
+}
+
+#vider-panier {
+    background-color: rgb(64, 156, 199);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 15px 25px;
+    cursor: pointer;
+    display: block;
+    margin: 15px auto;
+
+}
+
+.date-visite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.date-visite label {
+    color: white;
+    font-size: 18px;
+}
+
+#date-visite {
+    cursor: pointer;
+    background-color: rgb(64, 156, 199);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 25px;
+}
+
+.liste-tickets {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.ticket-ligne {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 12px 0;
+    border-bottom: 1px solid rgb(64, 156, 199);
+}
+
+.ticket-ligne:last-child {
+    border-bottom: none;
+}
+
+.ticket-ligne p {
+    color: white;
+    font-size: 18px;
+    flex: 1 1 250px;
+    /* flex-grow: 1 -> peut grandir
+    flex-shrink: 1 -> peut rétrécir
+    flex-basis: 250px -> largeur de base */
+}
+
+.compteur {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: rgb(64, 156, 199);
+    border-radius: 25px;
+    padding: 8px 50px;
+}
+
+.compteur button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.compteur span {
+    color: white;
+    font-size: 18px;
+}
+
+.panier p,
+#prix-total,
+#date-panier {
+    color: white;
+    font-size: 17px;
+}
+
+#prix-total {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.panier hr {
+    border: none;
+    height: 1px;
+    background: rgb(51, 87, 106);
+    margin: 20px auto;
+}
+
+.validation-panier {
+    margin-top: 20px;
+}
+
+#valider-panier {
+    width: 100%;
+    background-color: rgb(9, 26, 36);
+    color: white;
+    border: none;
+    font-weight: bold;
+    border-radius: 50px;
+    padding: 35px;
+    font-size: 30px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.ticket h2,
+.panier h2,
+.date-visite label,
+#vider-panier,
+#valider-panier {
+    text-transform: uppercase;
+}
+
+.ligne-panier {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 12px;
+}
+
+.retirer-un {
+    background-color: rgb(64, 156, 199);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 8px 35px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.date-visite label {
+    font-size: 30px;
+}
+
+#message {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}

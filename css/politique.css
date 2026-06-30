@@ -1,0 +1,41 @@
+body {
+    background-color: rgb(70, 119, 145);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.politique {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: rgb(16, 46, 64);
+    border-radius: 20px;
+}
+
+.politique h1 {
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.politique section {
+    margin-bottom: 40px;
+}
+
+.politique h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: rgb(64, 156, 199);
+    border-bottom: 2px solid rgb(64, 156, 199);
+    padding-bottom: 8px;
+}
+
+.politique p {
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: justify;     /* aligne le texte des deux côtés comme dans un livre */
+}

@@ -1,0 +1,188 @@
+body {
+    background-color: rgb(70, 119, 145);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: bold;
+    user-select: none;
+    margin: 0;
+    padding: 0;
+}
+
+.gauche {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.titre h1 {
+    font-size: 32px;
+    text-align: center;
+    margin: 40px 0 30px 0;
+    text-transform: uppercase;
+}
+
+.logement-contenu {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 90%;
+    flex-direction: row; /* les éléments sont placés horizontalement */
+    margin: auto;
+    margin-bottom: 50px;
+
+}
+
+.bloc-recherche, .panier {
+    width: 100%;
+    padding: 30px;
+    background-color: rgb(9, 26, 36);
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.bloc-recherche h2, .panier h2{
+    background-color: rgba(161, 210, 213, 0.824);
+    padding: 15px 20px;
+    margin: -30px -30px 25px -30px;
+    border-radius: 20px 20px 0 0;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: rgb(20, 20, 20);
+}
+
+.champ-recherche {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.champ-recherche label {
+    color: white;
+    font-size: 25px;
+}
+
+.champ-recherche input[type="text"], .champ-recherche input[type="date"] {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.925);
+    color: black;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* bouton de recherche */
+#rechercher {
+    display: block;
+    margin: 15px auto 0 auto;
+    background-color: rgb(64, 156, 199);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.hotels {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 25px;
+}
+
+.hotel-card {
+    max-width: 320px;
+    background-color: rgb(9, 26, 36);
+    border-radius: 20px;
+    padding: 0 0 25px 0;
+    display: none; /* cache complètement l’élément */
+    flex-direction: column;
+    align-items: stretch;
+    flex: 0 1 300px; 
+}
+
+.hotel-card h2 {
+    background-color: rgba(128, 204, 250, 0.824);
+    padding: 15px 20px;
+    border-radius: 20px 20px 0 0;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: rgb(20, 20, 20);
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+
+.hotel-card p {
+    color: white;
+    font-size: 16px;
+    padding: 0 20px;
+    margin-bottom: 10px;
+}
+
+.hotel-card .barre{
+    cursor: pointer;
+    background-color: rgb(64, 156, 199);
+    color: white;
+    border-radius: 8px;
+    padding: 5px;
+    border: none;
+    font-size: 14px;
+    align-items: center;
+    width: 33px;
+}
+.hotel-card .desc {
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    flex: 1; /* prend tout l’espace restant disponible */
+} 
+
+.hotel-card .prix {
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+}
+
+.hotel-card .adresse {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 15px;
+}
+
+.hotel-card input[type="button"] {
+    display: block;
+    margin: 10px auto 0 auto;
+    background-color: rgb(64, 156, 199);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 35px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+#payer {
+    display: block;
+    margin: 15px auto 0 auto;
+    background-color: rgb(64, 156, 199);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+}

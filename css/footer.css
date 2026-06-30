@@ -1,0 +1,68 @@
+.footer {
+    background-color: #334454;
+    padding: 50px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-conteneur {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.footer-ligne {
+    display: flex;
+    flex-wrap: wrap; /* permet aux éléments de passer à la ligne si manque de place */
+}
+
+.footer-colonne {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-colonne h4 {
+    font-size: 18px;
+    color: rgb(119, 148, 173);
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    position: relative;
+    font-weight: 700; /* épaisseur du texte : plus grand = plus gras */
+}
+
+.footer-colonne h4::before { /* soulignement */
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: rgb(0, 0, 0);
+    height: 2px;
+    width: 50px;
+}
+
+.footer-liste {
+    list-style: none; /* enlève les puces des listes */
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-liste a {
+    font-size: 16px;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 500;
+    color: #ffffff;
+    display: block; /* transforme le lien inline en bloc */
+    transition: 0.3s;
+}
+
+.footer-liste a:hover {
+    color: white;
+    padding-left: 8px;
+}
+
+
+.footer-reseaux a:hover {
+    color: #24262b;
+    background-color: white;
+}

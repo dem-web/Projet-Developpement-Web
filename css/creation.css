@@ -1,0 +1,92 @@
+body {
+  background-color: rgb(70, 119, 145);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  font-weight: bold;
+  user-select: none;
+}
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.connexion-carre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 700px;
+  padding: 30px;
+  background-color: rgb(9, 26, 36);
+  border-radius: 20px;
+  margin: auto;
+  margin-bottom: 75px;
+  box-sizing: border-box;
+}
+
+.champ1 {
+  background-color: rgba(255, 255, 255, 0.92);
+  color: rgb(20, 20, 20);
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 10px;
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+.champ2, .champ3 {
+  background-color: rgba(255, 255, 255, 0.916);
+  color: rgb(20, 20, 20);
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  padding: 10px;
+  padding-right: 45px;
+  font-size: 18px;
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.co {
+  color: white;
+  background-color: rgb(64, 156, 199);
+  border: none;
+  border-radius: 50px;
+  font-size: 22px;
+  padding: 15px;
+  text-decoration: none;
+  box-sizing: border-box;
+  margin: 30px 100px 40px;
+  text-transform: uppercase;
+  align-self: center; /* centre le bouton */
+}
+
+.nom,
+.mot-de-passe,
+.confirmer-mot-de-passe {
+  font-size: 25px;
+  color: rgb(148, 198, 238);
+}
+
+.erreur {
+  color: rgb(255, 255, 255);
+  margin-top: 10px;
+}
+
+.mdp-affiche1, .mdp-affiche2 {
+  position: relative;
+  width: 80%;
+}
+
+.oeil {
+  position: absolute;
+  width: 60px;
+  height: 50px;
+  cursor: pointer;
+}
