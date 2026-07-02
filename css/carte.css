@@ -28,7 +28,6 @@ h1 {
     padding-bottom: 40px;
 }
 
-/* WRAPPER CARTE */
 .carte-wrapper {
     position: relative;
     background-color: rgb(9, 26, 36);
@@ -55,7 +54,6 @@ h1 {
     border-color: rgba(64, 156, 199, 0.7);
 }
 
-/* Positions des zones */
 .zone-fusee { top: 5%;  left: 38%; width: 14%; height: 22%; }
 .zone-spinner { top: 28%; left: 24%; width: 16%; height: 18%; }
 .zone-carrousel { top: 52%; left: 22%; width: 16%; height: 20%; }
@@ -63,7 +61,6 @@ h1 {
 .zone-riverside { top: 18%; left: 66%; width: 18%; height: 16%; }
 .zone-coaster { top: 28%; left: 68%; width: 28%; height: 22%; }
 
-/* PANNEAU DESCRIPTION */
 .panneau {
     opacity: 0;
     background-color: rgb(9, 26, 36);
